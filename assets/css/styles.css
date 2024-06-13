@@ -330,10 +330,10 @@ body {
     margin-top: 10px;
 }
 .cuscard .form-label {
-    margin-top: 1rem; /* Adjust the value as needed */
+    margin-top: 1rem; 
 }
 .custom-margin {
-    margin-top: 1rem; /* Adjust the value as needed */
+    margin-top: 1rem; 
 }
 .form-control {
     height: 30px;
@@ -371,6 +371,116 @@ body {
 .searchBtn{
     margin: 30px;
     margin-left: 1px;
+}
+
+@media (max-width: 1189px) {
+    .customer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .customer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuscard {
+        width: 700px; 
+    }
+
+    .form-control {
+        margin-left: 0; 
+    }
+
+    #viewCustomer{
+        width: 700px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .customer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuscard {
+        width: 380px; 
+        padding: 15px; 
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .form-control {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    #viewCustomer{
+        width: 380px; 
+    }
+
+    #tableForCus{
+        width: 100%;
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    #customerTable{
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .btn-outline-warning{
+        margin-top: 20px;
+    }
+
+    .btn-outline-danger{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 413px) {
+    .customer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuscard {
+        width: 250px; 
+        padding: 15px; 
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .form-control {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    #viewCustomer{
+        width: 250px; 
+    }
+
+    #tableForCus{
+        width: 100%;
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    #customerTable{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .btn-outline-warning{
+        margin-top: 20px;
+    }
+
+    .btn-outline-danger{
+        margin-top: 20px;
+    }
 }
 
 /*end-cutomer*/
@@ -461,16 +571,17 @@ body {
 
 }
 .order_details1{
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
 }
 
 .d-flex {
     background-color: var(--lavender);
     display: cover;
     width: vw-auto;
+    text-align: center;
 }
 .searchbar{
     width: 1000px;
@@ -511,6 +622,46 @@ body {
     border: 1px solid var(--purple2);
     justify-content: right;
     margin-left: 50px;
+  }
+
+  @media (max-width: 576px) {
+    .order_Details {
+      padding: 5px;
+    }
+    
+    #orderDetailsForm {
+      width: 100%;
+      padding: 5px;
+    }
+    
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .searchbar, .ordersearchField {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .ordercard {
+      width: 100%;
+      padding: 5px;
+    }
+  
+    .ordercard-header {
+      text-align: center;
+    }
+  
+    .tblDetails {
+      overflow-x: auto;
+    }
+    
+    #order-details-table {
+      width: 100%;
+      min-width: 600px; 
+    }
   }
   /*--------*/
 
@@ -584,5 +735,6 @@ body {
     margin-left: 20px;
 }
 .cardDetail{
+    display: inline;
     width: vw ;
 }
