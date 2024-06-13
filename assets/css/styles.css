@@ -121,7 +121,7 @@ body {
         display: none; 
         flex-direction: column;
         align-items: left;
-        width: fit-content;
+        width: 40%;
         position: absolute;
         padding: 5px;
         margin: 0;
@@ -236,7 +236,7 @@ body {
     }
 
     .subtitle {
-        font-size: 16px; 
+        font-size: 18px; 
         margin-bottom: 30px; 
     }
 
@@ -257,7 +257,7 @@ body {
     }
 
     .subtitle {
-        font-size: 14px; 
+        font-size: 17px; 
         margin-bottom: 20px; 
     }
 
@@ -284,7 +284,7 @@ body {
     }
 
     .subtitle {
-        font-size: 12px; 
+        font-size: 17px; 
         margin-bottom: 15px; 
     }
 
@@ -298,6 +298,200 @@ body {
     }
 }
 
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+  }
+
+  #flower-about-heading {
+    color: var(--rose-red);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Page Layout */
+  .page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  .about-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-page article {
+    max-width: 600px;
+  }
+  
+  .about-page h2 {
+    font-size: 2rem;
+    color: var(--rose-red);
+  }
+  
+  .about-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .about-page .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: var(--purple);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-page .btn:hover {
+    background-color: var(--blush-pink);
+  }
+  
+  .about-page .about-img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Featured Recipes Section */
+  .featured-recipes {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-title {
+    font-size: 1.5rem;
+    color: var(--rose-red);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .recipe {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recipe:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .recipe:hover .recipe-img {
+    transform: scale(1.05);
+  }
+  
+  .recipe h5 {
+    font-size: 1.2rem;
+    color: var(--rose-red);
+    margin: 10px 0;
+  }
+  
+  .recipe p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-page {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .about-page img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  
+    .recipes-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recipe {
+      max-width: 100%;
+    }
+  }
+
+  .page-footer {
+    background-color: var(--blush-pink); 
+    padding: 20px; 
+    text-align: center; 
+    border-top: 1px solid #dee2e6;
+    margin-bottom: -40px; 
+  }
+  
+  .page-footer p {
+    margin: 0; 
+    font-size: 14px; 
+    color: #6c757d;
+  }
+  
+  .footer-logo {
+    font-weight: bold; 
+    color: var(--rose-red);
+  }
+  
+  .page-footer a {
+    color: darkmagenta; 
+    text-decoration: none; 
+  }
+  
+  .page-footer a:hover {
+    text-decoration: underline; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .page-footer {
+      padding: 10px;
+      margin-bottom: 20px; 
+    }
+    
+    .page-footer p {
+      font-size: 12px; 
+    }
+  }
+  
+  
 /*end-Home*/
 /*Customer*/
 .customer1{
@@ -306,7 +500,7 @@ body {
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-image: url(../lily.jpg);
+    background-image: url(../rose.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
