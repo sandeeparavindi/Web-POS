@@ -735,6 +735,123 @@ body {
     margin-left: 50px;
   }
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .order1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #invoiceDetails {
+        width: 700px;
+    }
+
+    .form-control {
+        margin-left: 0; 
+    }
+
+    #orderDetails1 {
+        width: 700px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .order1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #invoiceDetails {
+        width: 380px;
+        margin-left: -4px;
+    }
+
+    .form-control {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    #orderDetails1 {
+        width: 380px;
+    }
+
+    #tableForOrder {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #item-order-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .btn-outline-warning{
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+
+    .btn-outline-danger{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+  @media (max-width: 413px) {
+    .order1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #invoiceDetails {
+        width: 250px;
+        margin-left: -4px;
+    }
+
+    .form-control {
+        margin-left: 0; 
+        width: 100%; 
+    }
+
+    #orderDetails1 {
+        width: 250px;
+    }
+
+    #tableForOrder {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #item-order-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .outline-success {
+        margin-top: 20px;
+    }
+
+    .outline-primary {
+        margin-top: 20px;
+    }
+
+    .outline-success {
+        margin-top: 20px;
+    }
+
+    .outline-primary {
+        margin-top: 20px;
+    }
+    
+    .btn-outline-warning{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn-outline-danger{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+  }
+
   @media (max-width: 576px) {
     .order_Details {
       padding: 5px;
